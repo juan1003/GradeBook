@@ -37,12 +37,12 @@ namespace GradeBook
     public void ShowStatisics()
     {
       var stats = this.GetStatistics();
-      System.Console.WriteLine($"The average grade is {stats.Average}");
+      System.Console.WriteLine($"The average grade is {stats.Average:N1}");
       System.Console.WriteLine($"The lowest grade is {stats.Low}");
       System.Console.WriteLine($"The highest grade is {stats.High}");
     }
 
     private List<double> grades;
-    private string name;
+    public string name;
   }
 }
